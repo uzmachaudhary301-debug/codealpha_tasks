@@ -1,0 +1,168 @@
+.cart-page {
+  padding: 20px 0;
+}
+
+.cart-page h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.cart-content-wrapper {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.cart-items-list {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cart-item-row {
+  background: white;
+  padding: 20px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+  border: 1px solid #e1e8ed;
+}
+
+.item-thumbnail {
+  background-color: #f1f2f6;
+  padding: 15px;
+  font-size: 24px;
+  border-radius: 4px;
+  margin-right: 20px;
+}
+
+.item-details {
+  flex: 1;
+}
+
+.item-details h4 {
+  font-size: 18px;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.item-qty {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.item-price-section {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.cart-summary-card {
+  flex: 1;
+  background: white;
+  padding: 30px;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  border: 1px solid #e1e8ed;
+}
+
+.cart-summary-card h3 {
+  font-size: 20px;
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.summary-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 15px;
+  color: #57606f;
+}
+
+.free-tag {
+  color: #2ecc71;
+  font-weight: 600;
+}
+
+.summary-divider {
+  border: none;
+  border-top: 1px solid #f1f2f6;
+  margin: 15px 0;
+}
+
+.total-row {
+  font-size: 18px;
+  font-weight: 700;
+  color: #2c3e50;
+}
+
+.checkout-btn {
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  width: 100%;
+  padding: 14px;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+  margin-top: 20px;
+}
+
+.checkout-btn:hover {
+  background-color: #27ae60;
+}
+
+.checkout-btn:disabled {
+  background-color: #bdc3c7;
+  cursor: not-allowed;
+}
+
+.empty-cart-box {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed #b2bec3;
+}
+
+.empty-icon {
+  font-size: 60px;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.shop-now-btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.auth-alert-box {
+  text-align: center;
+  padding: 30px;
+  background: #fff;
+  border-radius: 6px;
+  border: 1px solid #e1e8ed;
+}
+
+.auth-redirect-btn {
+  background-color: #e67e22;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 4px;
+  margin-top: 15px;
+  cursor: pointer;
+  font-weight: 600;
+}

@@ -1,0 +1,78 @@
+.home-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+/* Premium Elegant Hero Banner Style */
+.home-hero {
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: #ffffff;
+  padding: 60px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: var(--shadow);
+}
+
+.home-hero h1 {
+  color: #ffffff !important;
+  font-size: 42px;
+  margin-bottom: 12px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+
+.home-hero p {
+  color: #ecf0f1;
+  font-size: 18px;
+  max-width: 600px;
+  margin: 0 auto;
+  opacity: 0.9;
+}
+
+/* Beautiful State Border Box for Clean Feedback */
+.empty-catalog {
+  border: 2px dashed var(--border);
+  border-radius: 12px;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: var(--bg);
+  box-shadow: var(--shadow);
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.empty-catalog h3 {
+  font-size: 24px;
+  color: var(--text-h);
+  margin-bottom: 10px;
+  font-family: var(--heading);
+}
+
+.empty-catalog p {
+  color: var(--text);
+  font-size: 16px;
+}
+
+/* Dynamic Grid Architecture for Product Cards */
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 30px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Error State UI Alert */
+.error-message {
+  background-color: #fde8e8;
+  color: #e74c3c;
+  padding: 16px;
+  border-radius: 8px;
+  border: 1px solid #f8b4b4;
+  text-align: center;
+  font-weight: 500;
+  margin: 20px 0;
+}

@@ -1,0 +1,131 @@
+.orders-page {
+  padding: 20px 0;
+}
+
+.orders-page h2 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-size: 26px;
+}
+
+.orders-list-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+.order-main-card {
+  background: white;
+  border-radius: 8px;
+  border: 1px solid #e1e8ed;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.03);
+  overflow: hidden;
+}
+
+.order-card-header {
+  background-color: #f8f9fa;
+  padding: 15px 20px;
+  border-bottom: 1px solid #e1e8ed;
+  display: flex;
+  justify-content: space-between;
+  font-size: 14px;
+}
+
+.label-text {
+  color: #7f8c8d;
+  font-weight: 600;
+}
+
+.value-text {
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+.hash-id {
+  color: #3498db;
+}
+
+.order-card-body {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.order-items-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+
+.order-item-mini-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 15px;
+  color: #34495e;
+  font-weight: 500;
+}
+
+.qty-tag {
+  background-color: #f1f2f6;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  color: #7f8c8d;
+  font-weight: 600;
+}
+
+.order-financials {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+.status-badge {
+  padding: 6px 14px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-badge.pending, .status-badge.processing {
+  background-color: #ffeaa7;
+  color: #d63031;
+}
+
+.status-badge.completed, .status-badge.delivered {
+  background-color: #badc58;
+  color: #6ab04c;
+}
+
+.total-bill-box {
+  text-align: right;
+}
+
+.bill-label {
+  font-size: 13px;
+  color: #7f8c8d;
+  display: block;
+}
+
+.bill-amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2ecc71;
+}
+
+.empty-orders-box {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 8px;
+  border: 1px dashed #b2bec3;
+}

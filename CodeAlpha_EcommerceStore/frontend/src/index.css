@@ -1,0 +1,137 @@
+:root {
+  /* Warm Premium Cream Light Theme */
+  --bg: #fdfbf7;           /* Main Background (Warm Cream) */
+  --text: #4a524a;         /* Body Text (Soft Charcoal Olive) */
+  --text-h: #1c241d;       /* Headings (Crisp Dark Forest Green) */
+  --border: #e6e0d5;       /* Subtle Borders (Creamy Tan) */
+  --code-bg: #f4efe6;      /* Code block backgrounds */
+  
+  /* Pistachio & Sage Accents */
+  --accent: #557a58;       /* Primary Interactive Color (Rich Pistachio) */
+  --accent-bg: rgba(85, 122, 88, 0.1);
+  --accent-border: rgba(85, 122, 88, 0.4);
+  --social-bg: rgba(244, 239, 230, 0.5);
+  --shadow: rgba(85, 122, 88, 0.08) 0px 10px 15px -3px, rgba(85, 122, 88, 0.04) 0px 4px 6px -2px;
+
+  /* Typography Structure */
+  --sans: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --heading: system-ui, -apple-system, sans-serif;
+  --mono: ui-monospace, Consolas, monospace;
+
+  font: 18px/145% var(--sans);
+  letter-spacing: 0.18px;
+  color-scheme: light dark;
+  color: var(--text);
+  background: var(--bg);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  @media (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
+
+/* Luxury Dark Forest Mode Configuration */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c221e;         /* Deep Olive/Forest night background */
+    --text: #cbd5e1;       /* Light Sage body text */
+    --text-h: #f7f9f6;     /* Off-white heading text */
+    --border: #2d362e;     /* Deep Sage borders */
+    --code-bg: #242b26;    /* Dark container fills */
+    --accent: #8da88f;     /* Vibrant pastel Pistachio for highlights */
+    --accent-bg: rgba(141, 168, 143, 0.15);
+    --accent-border: rgba(141, 168, 143, 0.5);
+    --social-bg: rgba(45, 54, 46, 0.5);
+    --shadow: rgba(0, 0, 0, 0.4) 0px 10px 15px -3px, rgba(0, 0, 0, 0.25) 0px 4px 6px -2px;
+  }
+
+  #social .button-icon {
+    filter: invert(1) brightness(2);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth shifting theme transition */
+}
+
+/* 1. Root Element Layout Reset */
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
+
+/* 2. Main App Container Wrapper (Fixed Sticky Layout Setup) */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* 3. Main Content Area (Forces Footer to Bottom Automatically) */
+.main-content {
+  flex: 1; /* Yeh baaki bachi saari empty space occupy karega */
+  width: 100%;
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  font-family: var(--heading);
+  font-weight: 500;
+  color: var(--text-h);
+}
+
+h1 {
+  font-size: 56px;
+  letter-spacing: -1.68px;
+  margin: 32px 0;
+  @media (max-width: 1024px) {
+    font-size: 36px;
+    margin: 20px 0;
+  }
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 118%;
+  letter-spacing: -0.24px;
+  margin: 0 0 8px;
+  @media (max-width: 1024px) {
+    font-size: 20px;
+  }
+}
+
+p {
+  margin: 0;
+}
+
+code,
+.counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 15px;
+  line-height: 135%;
+  padding: 4px 8px;
+  background: var(--code-bg);
+}

@@ -1,0 +1,103 @@
+.footer {
+  background-color: #2d362e; /* Deep Sage/Pistachio Green shadow */
+  color: #cbd5e1;
+  padding: 50px 20px 20px 20px;
+  font-family: system-ui, -apple-system, sans-serif;
+  border-top: 2px solid #8da88f;
+  width: 100%;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding-bottom: 40px;
+}
+
+.footer-section h4 {
+  color: #f7f9f6;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.footer-brand {
+  color: #eef5f0;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 1px;
+}
+
+.footer-desc {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section ul li {
+  font-size: 14px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.footer-section ul li:hover {
+  color: #b3d4b6; /* Light Pistachio Hover */
+}
+
+.contact-details p {
+  font-size: 14px;
+  margin-bottom: 12px;
+  line-height: 1.5;
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 20px;
+  border-top: 1px solid #424f43;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+}
+
+.footer-tech-tag {
+  color: #8da88f;
+}
+
+@media (max-width: 768px) {
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+    gap: 10px;
+  }
+}
+.contact-details p {
+  display: flex;
+  align-items: center;
+  gap: 12px; /* Icon aur text ke beech perfect professional space */
+  font-size: 14px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.footer-icon {
+  color: #8da88f; /* Pistachio theme accent matching color */
+  font-size: 16px;
+  flex-shrink: 0;
+}
